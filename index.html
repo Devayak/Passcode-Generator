@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=content_copy" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="content">
+    <h2>Password Generator</h2>
+   <div class="input-box">
+    <input type="text" class="passBox" id="name" disabled>
+    <span class="material-symbols-outlined" id="copy">
+content_copy
+</span>
+ <i class="fa-solid fa-check" id="check"></i>
+
+   </div>
+        <input  id="limit" type="range" min="1" max="30" value="8">
+    <div class="row">
+        <p>password Length</p>
+        <span id="limit-value"></span>
+    </div>
+    <div  class="row">
+          <label for="lowercase" >Include LowerCase Letters(a-z)</label>
+        <input type="checkbox" id="lowercase" name="lowercase">
+      
+    </div>
+    <div class="row" >
+      <label for="UpperCase" >Include UpperCase Letters(a-z)</label>
+        <input type="checkbox" id="uppercase" name="uppercase">
+    </div>
+    <div class="row" >
+        <label for="number" >Include Number(0-9)</label>
+        <input type="checkbox" id="number" name="number">
+    </div>
+    <div class="row" >
+        <label for="symbols" >Include Number(@#$*-_~)</label>
+        <input type="checkbox" id="Symbols" name="Symbols">
+    </div>
+   
+    <button id="genBtn">Generate Password</button>
+        
+  </div>
+  
+        
+<script src="script.js"></script>
+</body>
+</html>
